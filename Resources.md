@@ -36,7 +36,7 @@ output {
 
 2. [Windows Security Log Events (Event ID 4624)](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4624)
 
-3. [Windows Security Log Events](https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/basic-audit-events)
+3. [Windows Security Log Events](https://learn.microsoft.com/en-us/windows/security/threat-protection/)
 
 4. [MITRE ATT&CK Framework](https://attack.mitre.org/)
 

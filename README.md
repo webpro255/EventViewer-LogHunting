@@ -1,7 +1,7 @@
 # EventViewer-LogHunting
-This repository provides a guide on how to effectively use Windows Event Viewer to hunt for security-relevant logs. It's designed to enhance your skills in log analysis and threat hunting.
+This repository provides a guide on how to effectively use Windows Event Viewer to hunt for security-relevant logs. It's designed to enhance log analysis and threat hunting.
 ## Key Skills You Will Learn
-- **Understanding Event Viewer**: Learn how to navigate Windows Event Viewer and understand its structure.
+- **Understanding Event Viewer**: Navigate Windows Event Viewer and understand its structure.
 - **Identifying Security Logs**: Find and analyze security-related logs such as user logins, failed login attempts, and suspicious activities.
 - **Log Hunting Techniques**: Strategies for hunting specific threat indicators in Event Viewer logs.
 - **Use Cases**: Practical examples of real-world cyber incidents and how Event Viewer can help in detection.

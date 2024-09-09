@@ -31,7 +31,6 @@ output {
 }
 ``
 ## 3. Learning Resources
-## Learning Resources
 
 1. [Advanced XML Filtering in Windows Event Viewer](https://techcommunity.microsoft.com/t5/ask-the-directory-services-team/advanced-xml-filtering-in-the-windows-event-viewer/ba-p/399761)
 

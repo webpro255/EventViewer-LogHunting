@@ -1,0 +1,44 @@
+<QueryList>
+  <!-- Brute Force Login Attempts (Event ID 4625) -->
+  <Query Id="1" Path="Security">
+    <Select Path="Security">
+      *[EventData[Data[@Name='EventID'] and (Data='4625')]] and 
+      *[EventData[Data[@Name='TargetUserName'] and (Data='your_username')]]
+    </Select>
+  </Query>
+
+  <!-- Privilege Escalation (Event ID 4672) -->
+  <Query Id="2" Path="Security">
+    <Select Path="Security">
+      *[System[(EventID=4672)]]
+    </Select>
+  </Query>
+
+  <!-- Logon Failures and Successes (Event IDs 4624 and 4625) -->
+  <Query Id="3" Path="Security">
+    <Select Path="Security">
+      *[System[(EventID=4624 or EventID=4625)]]
+    </Select>
+  </Query>
+
+  <!-- Logon Attempts Outside Business Hours -->
+  <Query Id="4" Path="Security">
+    <Select Path="Security">
+      *[System[(EventID=4624) and TimeCreated[timediff(@SystemTime) &gt;= 21600000 or timediff(@SystemTime) &lt;= 25200000]]]
+    </Select>
+  </Query>
+
+  <!-- Account Lockouts (Event ID 4740) -->
+  <Query Id="5" Path="Security">
+    <Select Path="Security">
+      *[System[(EventID=4740)]]
+    </Select>
+  </Query>
+
+  <!-- Logon Attempts from Specific IP Address -->
+  <Query Id="6" Path="Security">
+    <Select Path="Security">
+      *[EventData[Data[@Name='IpAddress'] and (Data='192.168.1.1')]]
+    </Select>
+  </Query>
+</QueryList>
